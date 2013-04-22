@@ -1,0 +1,23 @@
+{
+    "name": "ccc/star-rating-bundle",
+    "type": "symfony-bundle",
+    "description": "Twig extension for quick integration of FyneWorks' Star Rating widget",
+    "keywords": ["symfony", "fyneworks", "star-rating", "form", "twig"],
+    "homepage": "http://github.com/cc-consulting/StarRatingBundle",
+    "license": ["MIT"],
+    "authors": [
+        {
+            "name": "Evan Owens",
+            "email": "evan.owens@ccconsulting.jp"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": ">=2.1"
+    },
+    "autoload": {
+        "psr-0": { "CCC\\StarRatingBundle": "" }
+    },
+    "target-dir": "CCC/StarRatingBundle",
+    "minimum-stability": "dev"
+}
