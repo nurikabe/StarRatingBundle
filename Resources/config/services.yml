@@ -1,10 +1,10 @@
 services:
-    star-rating.twig.extension:
+    star_rating.twig.extension:
         class: CCC\StarRatingBundle\Extension\StarRatingTwigExtension
         tags:
             -  { name: twig.extension }
 
-    star-rating.form.type:
+    star_rating.form.type:
         class: CCC\StarRatingBundle\Form\StarRatingType
         tags:
             - { name: form.type, alias: star_rating }
