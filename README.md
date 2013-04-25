@@ -93,11 +93,11 @@ $builder->add('rating', 'star_rating', array(
 
 Original `choice` field:
 
-![before](Resources/public/before.png)
+![before](Resources/doc/before.png)
 
 As a `star_rating` field:
 
-![after](Resources/public/after.png)
+![after](Resources/doc/after.png)
 
 A Twig filter is also available that will render a static Star Rating widget given a numeric input:
 
