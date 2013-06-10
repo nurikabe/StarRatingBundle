@@ -65,7 +65,7 @@ Load the Star Rating plugin in your layout.  For example, if you are using Asset
 via Composer as per above:
 
 ``` twig
-{% stylesheets '%kernel.root_dir%/../vendor/fyneworks/star-rating/jquery.rating.css' %}
+{% stylesheets '@CCCStarRatingBundle/Resources/rating.css' %}
     <link rel="stylesheet" href="{{ asset_url }}" />
 {% endstylesheets %}
 {% javascripts '%kernel.root_dir%/../vendor/fyneworks/star-rating/jquery.rating.js' %}
