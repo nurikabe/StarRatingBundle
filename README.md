@@ -24,7 +24,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new CCC\StarRatingBundle\StarRatingBundle(),
+        new CCC\StarRatingBundle\CCCStarRatingBundle(),
         // ...
     );
 ```
