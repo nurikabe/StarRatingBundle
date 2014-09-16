@@ -3,12 +3,12 @@
     "type": "symfony-bundle",
     "description": "Twig extension for quick integration of FyneWorks' Star Rating widget",
     "keywords": ["symfony", "fyneworks", "star-rating", "form", "twig"],
-    "homepage": "http://github.com/cc-consulting/StarRatingBundle",
+    "homepage": "http://github.com/nurikabe/StarRatingBundle",
     "license": ["MIT"],
     "authors": [
         {
             "name": "Evan Owens",
-            "email": "evan.owens@ccconsulting.jp"
+            "email": "eaowens@gmail.com"
         }
     ],
     "require": {
