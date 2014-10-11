@@ -29,29 +29,6 @@ public function registerBundles()
     );
 ```
 
-### Install the Star Rating Plugin
-
-There are many ways to skin this cat, though if you'd like to manage the Star Rating Plugin via Composer this can be
-done by adding a new external repository to `composer.json`:
-
-``` json
-"repositories": [
-    {
-        "type": "package",
-        "package": {
-            "name": "fyneworks/star-rating",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Fyneworks-jQuery/star-rating.git",
-                "reference": "master"
-            }
-        }
-    },
-    ...
-}
-```
-
 ### Update your packages
 
 ``` bash
