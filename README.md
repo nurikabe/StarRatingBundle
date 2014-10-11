@@ -1,6 +1,8 @@
 CCCStarRatingBundle
 ===================
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/c8e7b3ff-b68c-424a-933a-2091db8cfafa/mini.png)](https://insight.sensiolabs.com/projects/c8e7b3ff-b68c-424a-933a-2091db8cfafa)
+
 Form type and Twig filter for FyneWorks' super fine jQuery [Star Rating Plugin](https://github.com/Fyneworks-jQuery/star-rating).
 
 Installation
