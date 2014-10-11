@@ -11,6 +11,20 @@
             "email": "eaowens@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "fyneworks/star-rating",
+                "version": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/fyneworks/star-rating",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
     "require": {
         "php": ">=5.3.2",
         "fyneworks/star-rating": "dev-master",
