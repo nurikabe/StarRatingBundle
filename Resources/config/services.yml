@@ -5,6 +5,6 @@ services:
             -  { name: twig.extension }
 
     star_rating.form.type:
-        class: CCC\StarRatingBundle\Form\StarRatingType
+        class: CCC\StarRatingBundle\Form\Type\StarRatingType
         tags:
             - { name: form.type, alias: star_rating }
