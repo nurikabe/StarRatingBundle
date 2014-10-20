@@ -27,8 +27,10 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "symfony/symfony": "~2.1",
-        "fyneworks/star-rating": "dev-master"
+        "symfony/symfony": "~2.1"
+    },
+    "suggest": {
+        "fyneworks/star-rating": "The Star Rating Plugin for the jQuery"
     },
     "autoload": {
         "psr-0": { "CCC\\StarRatingBundle": "" }
