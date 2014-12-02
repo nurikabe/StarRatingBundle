@@ -35,6 +35,5 @@
     "autoload": {
         "psr-0": { "CCC\\StarRatingBundle": "" }
     },
-    "target-dir": "CCC/StarRatingBundle",
-    "minimum-stability": "dev"
+    "target-dir": "CCC/StarRatingBundle"
 }
