@@ -34,7 +34,7 @@ This is the easiest way to ensure that you have the Star Rating Plugin installed
 
 ``` json
     "require": {
-        "nurikabe/star-rating-bundle": "dev-master"
+        "nurikabe/star-rating-bundle": "2.0.0"
         ...
     }
 ```
