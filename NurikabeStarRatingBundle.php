@@ -1,12 +1,12 @@
 <?php
 
-namespace CCC\StarRatingBundle;
+namespace Nurikabe\StarRatingBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use CCC\StarRatingBundle\DependencyInjection\Compiler\TwigFormPass;
+use Nurikabe\StarRatingBundle\DependencyInjection\Compiler\TwigFormPass;
 
-class CCCStarRatingBundle extends Bundle
+class NurikabeStarRatingBundle extends Bundle
 {
     public function build(ContainerBuilder $container)
     {
