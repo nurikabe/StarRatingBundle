@@ -1,6 +1,6 @@
 <?php
 
-namespace CCC\StarRatingBundle\Extension;
+namespace Nurikabe\StarRatingBundle\Extension;
 
 class StarRatingTwigExtension extends \Twig_Extension
 {
@@ -13,7 +13,7 @@ class StarRatingTwigExtension extends \Twig_Extension
 
     public function getName()
     {
-        return 'ccc_star_rating';
+        return 'nurikabe_star_rating';
     }
 
     /**
@@ -21,7 +21,7 @@ class StarRatingTwigExtension extends \Twig_Extension
      */
     public static function starRatingFilter($rating)
     {
-        $starWidget = '';  // do not change this css
+        $starWidget = '';
         for ($i = 1; $i <= $rating; $i++) {
             $starWidget .= '<div class="star-rating star-rating-hover star-rating-readonly"><a>*</a></div>';
         }

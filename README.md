@@ -1,4 +1,4 @@
-CCCStarRatingBundle
+NurikabeStarRatingBundle
 ===================
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/c8e7b3ff-b68c-424a-933a-2091db8cfafa/mini.png)](https://insight.sensiolabs.com/projects/c8e7b3ff-b68c-424a-933a-2091db8cfafa)
@@ -13,7 +13,7 @@ Installation
 ``` json
 {
     "require": {
-        "ccc/star-rating-bundle": "dev-master"
+        "nurikabe/star-rating-bundle": "dev-master"
         ...
     }
 }
@@ -26,7 +26,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new CCC\StarRatingBundle\CCCStarRatingBundle(),
+        new Nurikabe\StarRatingBundle\NurikabeStarRatingBundle(),
         // ...
     );
 ```
@@ -34,7 +34,7 @@ public function registerBundles()
 ### Update your packages
 
 ``` bash
-$ php composer.phar update ccc/star-rating-bundle
+$ php composer.phar update nurikabe/star-rating-bundle
 ```
 
 Usage
@@ -44,7 +44,7 @@ Load the Star Rating plugin in your layout.  For example, if you are using Asset
 via Composer as per above:
 
 ``` twig
-{% stylesheets '@CCCStarRatingBundle/Resources/rating.css' %}
+{% stylesheets '@NurikabeStarRatingBundle/Resources/rating.css' %}
     <link rel="stylesheet" href="{{ asset_url }}" />
 {% endstylesheets %}
 {% javascripts '%kernel.root_dir%/../vendor/fyneworks/star-rating/jquery.rating.js' %}
