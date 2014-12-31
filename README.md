@@ -1,4 +1,4 @@
-CCCStarRatingBundle
+NurikabeStarRatingBundle
 ===================
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/c8e7b3ff-b68c-424a-933a-2091db8cfafa/mini.png)](https://insight.sensiolabs.com/projects/c8e7b3ff-b68c-424a-933a-2091db8cfafa)
@@ -8,15 +8,35 @@ Form type and Twig filter for FyneWorks' super fine jQuery [Star Rating Plugin](
 Installation
 ------------
 
-### Add the package to your dependencies
+### Manually add a repository for the Star Rating Plugin
+
+This is the easiest way to ensure that you have the Star Rating Plugin installed.  Add a repository to
+`composer.json`:
 
 ``` json
-{
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "fyneworks/star-rating",
+                "version": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/fyneworks/star-rating.git",
+                    "reference": "master"
+                }
+            }
+        }
+    ]
+```
+
+### Add the bundle to your dependencies
+
+``` json
     "require": {
-        "ccc/star-rating-bundle": "dev-master"
+        "nurikabe/star-rating-bundle": "2.0.0"
         ...
     }
-}
 ```
 
 ### Register the bundle in your kernel
@@ -26,7 +46,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new CCC\StarRatingBundle\CCCStarRatingBundle(),
+        new Nurikabe\StarRatingBundle\NurikabeStarRatingBundle(),
         // ...
     );
 ```
@@ -34,8 +54,11 @@ public function registerBundles()
 ### Update your packages
 
 ``` bash
-$ php composer.phar update ccc/star-rating-bundle
+$ php composer.phar update nurikabe/star-rating-bundle
 ```
+
+If you define a repository for `fyneworks/star-rating` as per the above then installing `nurikabe/star-rating-bundle`
+should also install the `fyneworks/star-rating` dependency.
 
 Usage
 -----
@@ -44,7 +67,7 @@ Load the Star Rating plugin in your layout.  For example, if you are using Asset
 via Composer as per above:
 
 ``` twig
-{% stylesheets '@CCCStarRatingBundle/Resources/rating.css' %}
+{% stylesheets '@NurikabeStarRatingBundle/Resources/rating.css' %}
     <link rel="stylesheet" href="{{ asset_url }}" />
 {% endstylesheets %}
 {% javascripts '%kernel.root_dir%/../vendor/fyneworks/star-rating/jquery.rating.js' %}

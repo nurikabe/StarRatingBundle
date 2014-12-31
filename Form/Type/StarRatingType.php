@@ -1,6 +1,6 @@
 <?php
 
-namespace CCC\StarRatingBundle\Form\Type;
+namespace Nurikabe\StarRatingBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 

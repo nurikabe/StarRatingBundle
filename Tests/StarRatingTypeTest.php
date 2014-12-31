@@ -1,8 +1,8 @@
 <?php
 
-namespace CCC\StarRatingBundle\Tests;
+namespace Nurikabe\StarRatingBundle\Tests;
 
-use CCC\StarRatingBundle\Form\Type\StarRatingType;
+use Nurikabe\StarRatingBundle\Form\Type\StarRatingType;
 
 class StarRatingTypeTest extends \PHPUnit_Framework_TestCase
 {
