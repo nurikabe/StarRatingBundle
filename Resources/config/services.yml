@@ -1,10 +1,10 @@
 services:
     star_rating.twig.extension:
-        class: CCC\StarRatingBundle\Extension\StarRatingTwigExtension
+        class: Nurikabe\StarRatingBundle\Extension\StarRatingTwigExtension
         tags:
             -  { name: twig.extension }
 
     star_rating.form.type:
-        class: CCC\StarRatingBundle\Form\Type\StarRatingType
+        class: Nurikabe\StarRatingBundle\Form\Type\StarRatingType
         tags:
             - { name: form.type, alias: star_rating }
