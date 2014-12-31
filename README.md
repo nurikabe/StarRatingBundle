@@ -8,15 +8,35 @@ Form type and Twig filter for FyneWorks' super fine jQuery [Star Rating Plugin](
 Installation
 ------------
 
-### Add the package to your dependencies
+### Manually add a repository for the Star Rating Plugin
+
+This is the easiest way to ensure that you have the Star Rating Plugin installed.  Add a repository to
+`composer.json`:
 
 ``` json
-{
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "fyneworks/star-rating",
+                "version": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/fyneworks/star-rating.git",
+                    "reference": "master"
+                }
+            }
+        }
+    ]
+```
+
+### Add the bundle to your dependencies
+
+``` json
     "require": {
         "nurikabe/star-rating-bundle": "dev-master"
         ...
     }
-}
 ```
 
 ### Register the bundle in your kernel
@@ -36,6 +56,9 @@ public function registerBundles()
 ``` bash
 $ php composer.phar update nurikabe/star-rating-bundle
 ```
+
+If you define a repository for `fyneworks/star-rating` as per the above then installing `nurikabe/star-rating-bundle`
+should also install the `fyneworks/star-rating` dependency.
 
 Usage
 -----
