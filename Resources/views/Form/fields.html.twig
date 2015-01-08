@@ -3,7 +3,11 @@
         {% if expanded %}
             <div {{ block('widget_container_attributes') }}>
                 {% for child in form %}
-                    {{ form_widget(child, {'attr':{'class':'star', 'title': child.vars.label}}) }}
+                    {% set class = 'star' %}
+                    {% if child.vars.required %}
+                        {% set class = 'star required' %}
+                    {% endif %}
+                    {{ form_widget(child, {'attr':{'class':class, 'title': child.vars.label}}) }}
                 {% endfor %}
             </div>
         {% else %}
