@@ -3,7 +3,10 @@
         {% if expanded %}
             <div {{ block('widget_container_attributes') }}>
                 {% for child in form %}
-                    {{ form_widget(child, {'attr':{'class':'star', 'title': child.vars.label}}) }}
+                    {# Create class string with "star" appended #}
+                    {% set starredClass = (child.vars.attr.class|default ~ ' star')|trim %}
+                    {# Merge class into attr and use label instead of value for title #}
+                    {{ form_widget(child, {'attr': child.vars.attr|merge({'class': starredClass, 'title': child.vars.label})}) }}
                 {% endfor %}
             </div>
         {% else %}
