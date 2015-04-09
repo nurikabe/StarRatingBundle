@@ -16,11 +16,11 @@
             "type": "package",
             "package": {
                 "name": "fyneworks/star-rating",
-                "version": "dev-master",
+                "version": "4.11.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/fyneworks/star-rating.git",
-                    "reference": "master"
+                    "url": "https://github.com/fyneworks/star-rating",
+                    "reference": "4.11.0"
                 }
             }
         }
@@ -28,7 +28,7 @@
     "require": {
         "php": ">=5.3.2",
         "symfony/symfony": "~2.1",
-        "fyneworks/star-rating": "dev-master"
+        "fyneworks/star-rating": "~4.11.0"
     },
     "autoload": {
         "psr-4": { "Nurikabe\\StarRatingBundle\\": "" }

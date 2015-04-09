@@ -19,22 +19,23 @@ This is the easiest way to ensure that you have the Star Rating Plugin installed
             "type": "package",
             "package": {
                 "name": "fyneworks/star-rating",
-                "version": "dev-master",
+                "version": "4.11.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/fyneworks/star-rating.git",
-                    "reference": "master"
+                    "url": "https://github.com/fyneworks/star-rating",
+                    "reference": "4.11.0"
                 }
             }
         }
     ]
 ```
 
-### Add the bundle to your dependencies
+### Add the library and bundle to your dependencies
 
 ``` json
     "require": {
-        "nurikabe/star-rating-bundle": "2.0.0"
+        "fyneworks/star-rating": "4.11.0",
+        "nurikabe/star-rating-bundle": "2.0.0",
         ...
     }
 ```
