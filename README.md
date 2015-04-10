@@ -35,7 +35,7 @@ This is the easiest way to ensure that you have the Star Rating Plugin installed
 ``` json
     "require": {
         "fyneworks/star-rating": "4.11.0",
-        "nurikabe/star-rating-bundle": "2.0.0",
+        "nurikabe/star-rating-bundle": "~2.0.1",
         ...
     }
 ```
